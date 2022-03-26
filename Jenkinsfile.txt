@@ -48,7 +48,7 @@ pipeline {
 	//Code starts for stage Unit Test
         stage('Unit Test') {
             steps {
-                sh 'mvn -X -e test'
+                sh 'mvn test'
             }	
             post {
                 always {
